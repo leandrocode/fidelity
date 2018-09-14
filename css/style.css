@@ -1,0 +1,14 @@
+.teste
+{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin:5% 0 0 35%;
+    background-color: #D3CDCD;
+    border-radius: 10px
+}
+
+.teste label
+{
+    margin-top: 10px;
+}
