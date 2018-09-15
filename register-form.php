@@ -9,7 +9,7 @@
 	{
 		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["username"]))
 		{
-			print_r("E-mail e Senha são obrigatórios!");
+			echo "<script> swal('Erro!', 'Todos os campos são obrigatórios!', 'error'); </script>";
 		}
 		else
 		{
@@ -19,10 +19,10 @@
 			$password = md5($password);
 
 			$query = "INSERT INTO users (username, email, password) VALUES('$username', '$email', '$password')";
-			
+
 			if(mysqli_query($connect, $query))
 			{
-				print_r("Cadastro Concluído!");
+				echo "<script> swal('Parabéns!', '" . $username . ", você foi cadastrado com sucesso!', 'success'); </script>";
 			}
 		}
 		
@@ -34,22 +34,22 @@
 		
 		<div class="form-group">
 			<label for="username">Nome</label>
-			<input type="text" class="form-control" id="username" name="username" required>
+			<input type="text" class="form-control" id="username" name="username">
 		</div>
 
 		<div class="form-group">
 			<label for="email">E-mail</label>
-			<input type="email" class="form-control" id ="email" name="email" required>
+			<input type="email" class="form-control" id ="email" name="email">
 		</div>
 
 		<div class="form-group">
 			<label for="password">Digite sua Senha</label>
-			<input type="password" class="form-control" id="password" name="password" required>
+			<input type="password" class="form-control" id="password" name="password">
 		</div>
 
 		<div class="form-group">
 			<label for="confirmPassword">Confirme sua Senha</label>
-			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
 		</div>
 
 		<button type="submit" name="register" class="btn btn-success">Cadastrar</button>
