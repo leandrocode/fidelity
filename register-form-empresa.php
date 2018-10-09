@@ -7,22 +7,32 @@
 
 	if(isset($_POST["register"]))
 	{
-		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["username"]))
+		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["nome"]) || empty($_POST["razao_social"]) || empty($_POST["cnpj"]) || empty($_POST["telefone"]) || empty($_POST["cep"]) || empty($_POST["rua"]) || empty($_POST["bairro"]) || empty($_POST["cidade"]) || empty($_POST["estado"]))
 		{
-			echo "<script> swal('Erro!', 'Todos os campos são obrigatórios!', 'error'); </script>";
+			echo "<script> swal('Erro!', 'Campos obrigatórios!', 'error'); </script>";
 		}
 		else
 		{
 			$email = mysqli_real_escape_string($connect, $_POST["email"]);
-			$username = mysqli_real_escape_string($connect, $_POST["username"]);
+			$nome = mysqli_real_escape_string($connect, $_POST["nome"]);
+			$razao_social = mysqli_real_escape_string($connect, $_POST["razao_social"]);
+			$cnpj = mysqli_real_escape_string($connect, $_POST["cnpj"]);
+			$telefone = mysqli_real_escape_string($connect, $_POST["telefone"]);
+			$cep = mysqli_real_escape_string($connect, $_POST["cep"]);
+			$rua = mysqli_real_escape_string($connect, $_POST["rua"]);
+			$numero = mysqli_real_escape_string($connect, $_POST["numero"]);
+			$complemento = mysqli_real_escape_string($connect, $_POST["complemento"]);
+			$bairro = mysqli_real_escape_string($connect, $_POST["bairro"]);
+			$cidade = mysqli_real_escape_string($connect, $_POST["cidade"]);
+			$estado = mysqli_real_escape_string($connect, $_POST["estado"]);
 			$password = mysqli_real_escape_string($connect, $_POST["password"]);
 			$password = md5($password);
 
-			$query = "INSERT INTO users (username, email, password) VALUES('$username', '$email', '$password')";
+			$query = "INSERT INTO empresas (nome, razao_social, cnpj, email, telefone, cep, rua, numero, complemento, bairro, cidade, estado, password)	VALUES('$nome', '$razao_social', '$cnpj', '$email', '$telefone', '$cep', '$rua', '$numero', '$complemento', '$bairro', '$cidade', '$estado', '$password')";
 
 			if(mysqli_query($connect, $query))
 			{
-				echo "<script> swal('Parabéns!', '" . $username . ", você foi cadastrado com sucesso!', 'success'); </script>";
+				echo "<script> swal('Parabéns!', '" . $nome . ", você foi cadastrado com sucesso!', 'success'); </script>";
 			}
 		}
 		
