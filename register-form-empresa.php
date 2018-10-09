@@ -187,10 +187,9 @@
 			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
 		</div>
 
+		<a class="btn btn-danger" href="index.php" role="button">Voltar</a>
 		<button type="submit" name="register" class="btn btn-success">Cadastrar</button>
-		<br>
-		<br>
-		<a href="index.php">Voltar</a>
+
 	</form>
 </div>
 

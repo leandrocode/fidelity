@@ -16,10 +16,9 @@
 			<input type="password" class="form-control" id="password" name="password" placeholder="Digite sua Senha">
 		</div>
 
-		<button type="submit" class="btn btn-outline-light">Entrar</button>
-		<br>
-		<br>
-		<a href="index.php">Voltar</a>
+		<a class="btn btn-danger" href="index.php" role="button">Voltar</a>
+		<button type="submit" class="btn btn-success">Entrar</button>
+		
 	</form>
 </div>
 
