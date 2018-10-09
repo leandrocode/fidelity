@@ -5,7 +5,7 @@
 	$connect = mysqli_connect("localhost", "root", "", "fidelity");
 	session_start();
 
-	if(isset($_POST["register_emp"]))
+	if(isset($_POST["register"]))
 	{
 		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["nome"]) || empty($_POST["razao_social"]) || empty($_POST["cnpj"]) || empty($_POST["telefone"]) || empty($_POST["cep"]) || empty($_POST["rua"]) || empty($_POST["bairro"]) || empty($_POST["cidade"]) || empty($_POST["estado"]))
 		{
@@ -39,7 +39,7 @@
 	}
 ?>
 
-<div class="register_emp">
+<div class="register">
 <img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
 <br>
 	<form method="POST">
@@ -114,7 +114,7 @@
 			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
 		</div>
 
-		<button type="submit" name="register_emp" class="btn btn-success">Cadastrar</button>
+		<button type="submit" name="register" class="btn btn-success">Cadastrar</button>
 		<br>
 		<br>
 		<a href="index.php">Voltar</a>
