@@ -7,7 +7,7 @@
 
 	if(isset($_POST["register"]))
 	{
-		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["nome"]) || empty($_POST["razao_social"]) || empty($_POST["cnpj"]) || empty($_POST["telefone"]) || empty($_POST["cep"]) || empty($_POST["rua"]) || empty($_POST["bairro"]) || empty($_POST["cidade"]) || empty($_POST["estado"]))
+		if(empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["nome"]) || empty($_POST["razao_social"]) || empty($_POST["cnpj"]) || empty($_POST["telefone"]) || empty($_POST["cep"]) || empty($_POST["rua"]) || empty($_POST["bairro"]) || empty($_POST["cidade"]) || empty($_POST["uf"]))
 		{
 			echo "<script> swal('Erro!', 'Campos obrigatórios!', 'error'); </script>";
 		}
@@ -24,11 +24,11 @@
 			$complemento = mysqli_real_escape_string($connect, $_POST["complemento"]);
 			$bairro = mysqli_real_escape_string($connect, $_POST["bairro"]);
 			$cidade = mysqli_real_escape_string($connect, $_POST["cidade"]);
-			$estado = mysqli_real_escape_string($connect, $_POST["estado"]);
+			$uf = mysqli_real_escape_string($connect, $_POST["uf"]);
 			$password = mysqli_real_escape_string($connect, $_POST["password"]);
 			$password = md5($password);
 
-			$query = "INSERT INTO empresas (nome, razao_social, cnpj, email, telefone, cep, rua, numero, complemento, bairro, cidade, estado, password)	VALUES('$nome', '$razao_social', '$cnpj', '$email', '$telefone', '$cep', '$rua', '$numero', '$complemento', '$bairro', '$cidade', '$estado', '$password')";
+			$query = "INSERT INTO empresas (nome, razao_social, cnpj, email, telefone, cep, rua, numero, complemento, bairro, cidade, uf, password)	VALUES('$nome', '$razao_social', '$cnpj', '$email', '$telefone', '$cep', '$rua', '$numero', '$complemento', '$bairro', '$cidade', '$uf', '$password')";
 
 			if(mysqli_query($connect, $query))
 			{
@@ -47,7 +47,7 @@
             document.getElementById('bairro').value=("");
             document.getElementById('cidade').value=("");
             document.getElementById('uf').value=("");
-            document.getElementById('ibge').value=("");
+            
     }
 
     function meu_callback(conteudo) {
@@ -57,7 +57,7 @@
             document.getElementById('bairro').value=(conteudo.bairro);
             document.getElementById('cidade').value=(conteudo.localidade);
             document.getElementById('uf').value=(conteudo.uf);
-            document.getElementById('ibge').value=(conteudo.ibge);
+            
         } //end if.
         else {
             //CEP não Encontrado.
@@ -71,7 +71,7 @@
         //Nova variável "cep" somente com dígitos.
         var cep = valor.replace(/\D/g, '');
 
-        //Verifica se campo cep possui valor informado.
+        <!-- //Verifica se campo cep possui valor informado. -->
         if (cep != "") {
 
             //Expressão regular para validar o CEP.
@@ -85,7 +85,7 @@
                 document.getElementById('bairro').value="...";
                 document.getElementById('cidade').value="...";
                 document.getElementById('uf').value="...";
-                document.getElementById('ibge').value="...";
+                
 
                 //Cria um elemento javascript.
                 var script = document.createElement('script');
@@ -173,8 +173,8 @@
 		</div>
 
         <div class="form-group">
-			<label for="estado">Estado</label>
-			<input type="text" class="form-control" id="estado" name="estado">
+			<label for="uf">Estado</label>
+			<input type="text" class="form-control" id="uf" name="uf">
 		</div>
 
 		<div class="form-group">
