@@ -1,8 +1,11 @@
 <?php include('header.php'); ?>
 
-<div class="login">
-	<form>
 
+<div class="login">
+<img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
+<br>
+	<form>
+	
 		<div class="form-group">
 			<label for="email">E-mail</label>
 			<input type="email" class="form-control" id ="email" name="email" placeholder="Digite seu E-mail">
@@ -14,6 +17,9 @@
 		</div>
 
 		<button type="submit" class="btn btn-outline-light">Entrar</button>
+		<br>
+		<br>
+		<a href="index.php">Voltar</a>
 	</form>
 </div>
 

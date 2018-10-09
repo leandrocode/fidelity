@@ -30,6 +30,8 @@
 ?>
 
 <div class="register">
+<img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
+<br>
 	<form method="POST">
 		
 		<div class="form-group">
@@ -53,6 +55,9 @@
 		</div>
 
 		<button type="submit" name="register" class="btn btn-success">Cadastrar</button>
+		<br>
+		<br>
+		<a href="index.php">Voltar</a>
 	</form>
 </div>
 
