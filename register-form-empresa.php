@@ -116,61 +116,57 @@
 <br>
 	<form method="POST">
 		<div class="form-row">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-4">
 			<label for="nome">Nome</label>
 			<input type="text" class="form-control" id="nome" name="nome">
 		</div>
             
-		<div class="form-group col-md-6">
+		<div class="form-group col-md-4">
 			<label for="razao_social">Razão Social</label>
 			<input type="text" class="form-control" id="razao_social" name="razao_social">
 		</div>
-		</div>
-
-		<div class="form-row">
-        <div class="form-group col-md-6">
+		
+        <div class="form-group col-md-4">
 			<label for="cnpj">CNPJ</label>
 			<input type="text" class="form-control" id="cnpj" name="cnpj">
 		</div>
+		</div>
         
-		<div class="form-group col-md-6">
+		<div class="form-row">
+		<div class="form-group col-md-4">
 			<label for="email">E-mail</label>
 			<input type="email" class="form-control" id ="email" name="email">
 		</div>
-		</div>
-
-		<div class="form-row">
-        <div class="form-group col-md-6">
+		
+		    <div class="form-group col-md-2">
 			<label for="telefone">Telefone</label>
 			<input type="text" class="form-control" id="telefone" name="telefone">
 		</div>
 
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-2">
 			<label for="cep">CEP</label>
 			<input type="text" class="form-control" id="cep" name="cep"
 			onblur="pesquisacep(this.value);">
 		</div>
-		</div>
-
-		<div class="form-row">
-        <div class="form-group col-md-6">
+		
+		<div class="form-group col-md-3">
 			<label for="rua">Rua</label>
 			<input type="text" class="form-control" id="rua" name="rua">
 		</div>
 
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-1">
 			<label for="numero">Número</label>
 			<input type="text" class="form-control" id="numero" name="numero">
-		</div>
-
-        <div class="form-group col-md-4">
-			<label for="complemento">Complemento</label>
-			<input type="text" class="form-control" id="complemento" name="complemento">
 		</div>
 		</div>
 
 		<div class="form-row">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-2">
+			<label for="complemento">Complemento</label>
+			<input type="text" class="form-control" id="complemento" name="complemento">
+		</div>
+		
+        <div class="form-group col-md-4">
 			<label for="bairro">Bairro</label>
 			<input type="text" class="form-control" id="bairro" name="bairro">
 		</div>
