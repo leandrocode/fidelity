@@ -115,76 +115,87 @@
 <img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
 <br>
 	<form method="POST">
-		
-        <div class="form-group">
+		<div class="form-row">
+        <div class="form-group col-md-6">
 			<label for="nome">Nome</label>
 			<input type="text" class="form-control" id="nome" name="nome">
 		</div>
             
-		<div class="form-group">
+		<div class="form-group col-md-6">
 			<label for="razao_social">Razão Social</label>
 			<input type="text" class="form-control" id="razao_social" name="razao_social">
 		</div>
+		</div>
 
-        <div class="form-group">
+		<div class="form-row">
+        <div class="form-group col-md-6">
 			<label for="cnpj">CNPJ</label>
 			<input type="text" class="form-control" id="cnpj" name="cnpj">
 		</div>
         
-		<div class="form-group">
+		<div class="form-group col-md-6">
 			<label for="email">E-mail</label>
 			<input type="email" class="form-control" id ="email" name="email">
 		</div>
+		</div>
 
-        <div class="form-group">
+		<div class="form-row">
+        <div class="form-group col-md-6">
 			<label for="telefone">Telefone</label>
 			<input type="text" class="form-control" id="telefone" name="telefone">
 		</div>
 
-        <div class="form-group">
+        <div class="form-group col-md-6">
 			<label for="cep">CEP</label>
 			<input type="text" class="form-control" id="cep" name="cep"
 			onblur="pesquisacep(this.value);">
 		</div>
+		</div>
 
-        <div class="form-group">
+		<div class="form-row">
+        <div class="form-group col-md-6">
 			<label for="rua">Rua</label>
 			<input type="text" class="form-control" id="rua" name="rua">
 		</div>
 
-        <div class="form-group">
+        <div class="form-group col-md-2">
 			<label for="numero">Número</label>
 			<input type="text" class="form-control" id="numero" name="numero">
 		</div>
 
-        <div class="form-group">
+        <div class="form-group col-md-4">
 			<label for="complemento">Complemento</label>
 			<input type="text" class="form-control" id="complemento" name="complemento">
 		</div>
+		</div>
 
-        <div class="form-group">
+		<div class="form-row">
+        <div class="form-group col-md-6">
 			<label for="bairro">Bairro</label>
 			<input type="text" class="form-control" id="bairro" name="bairro">
 		</div>
 
-        <div class="form-group">
+        <div class="form-group col-md-4">
 			<label for="cidade">Cidade</label>
 			<input type="text" class="form-control" id="cidade" name="cidade">
 		</div>
 
-        <div class="form-group">
+        <div class="form-group col-md-2">
 			<label for="uf">Estado</label>
 			<input type="text" class="form-control" id="uf" name="uf">
 		</div>
+		</div>
 
-		<div class="form-group">
+		<div class="form-row">
+		<div class="form-group col-md-6">
 			<label for="password">Digite sua Senha</label>
 			<input type="password" class="form-control" id="password" name="password">
 		</div>
 
-		<div class="form-group">
+		<div class="form-group col-md-6">
 			<label for="confirmPassword">Confirme sua Senha</label>
 			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+		</div>
 		</div>
 
 		<a class="btn btn-danger" href="index.php" role="button">Voltar</a>

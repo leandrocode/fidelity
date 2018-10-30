@@ -44,14 +44,16 @@
 			<input type="email" class="form-control" id ="email" name="email">
 		</div>
 
-		<div class="form-group">
+		<div class="form-row">
+		<div class="form-group col-md-6">
 			<label for="password">Digite sua Senha</label>
 			<input type="password" class="form-control" id="password" name="password">
 		</div>
 
-		<div class="form-group">
+		<div class="form-group col-md-6">
 			<label for="confirmPassword">Confirme sua Senha</label>
 			<input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
+		</div>
 		</div>
 
 		<a class="btn btn-danger" href="index.php" role="button">Voltar</a>
