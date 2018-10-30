@@ -5,7 +5,6 @@
 require_once 'db_connect.php';
 session_start();
 
-var_dump("testando");
 if(isset($_POST['btn-entrar'])):
 	$erros = array();
 	$login = mysqli_escape_string($connect, $_POST['email']);
@@ -43,8 +42,9 @@ if(isset($_POST['btn-entrar'])):
 endif;
 ?>
 
+<div class="foto-entrar"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
 <div class="login">
-<img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
+
 <br>
 	<form>
 	

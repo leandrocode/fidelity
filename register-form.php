@@ -28,9 +28,9 @@
 		
 	}
 ?>
-
-<div class="register-user">
 <div class="foto"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
+<div class="register-user">
+
 <br>
 	<form method="POST">
 		

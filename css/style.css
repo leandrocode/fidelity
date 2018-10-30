@@ -8,7 +8,7 @@ body {
     height: auto;
     text-align: center;
     margin: 0 auto;
-    padding: 5px 5px 5px 5px;
+    padding: 1px 10px 1px 10px;
 }
 
 .home a {
@@ -34,7 +34,7 @@ body {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 5px 5px 5px 5px;
+    padding: 1px 10px 1px 10px;
     background-color: rgba(114, 95, 124, 0.6);
     background-image: linear-gradient(to bottom, rgba(128, 0, 128, 0.6), rgba(101, 88, 178, 0.6));
 }
@@ -45,7 +45,7 @@ body {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 5px 5px 5px 5px;
+    padding: 1px 10px 1px 10px;
     background-color: rgba(114, 95, 124, 0.6);
     background-image: linear-gradient(to bottom, rgba(128, 0, 128, 0.6), rgba(101, 88, 178, 0.6));
 }
@@ -56,12 +56,12 @@ body {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 5px 5px 5px 5px;
+    padding:1px 10px 1px 10px;
     background-color: rgba(114, 95, 124, 0.6);
     background-image: linear-gradient(to bottom, rgba(128, 0, 128, 0.6), rgba(101, 88, 178, 0.6));
 }
 
-.login label, .register label {
+.login label, .register label, .register-user label {
     margin-top: 1px;
     color: whitesmoke;
     font: bold 14px/30px Arial, sans-serif;
@@ -72,6 +72,13 @@ body {
     height: auto;
     margin: 0 auto;
 }
+
+.foto-entrar {
+    width: 420px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .cadastre {
     font-family: 'Pacifico', cursive;
     color: rgb(82, 5, 82);
