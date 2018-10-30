@@ -5,6 +5,7 @@
 require_once 'db_connect.php';
 session_start();
 
+var_dump("testando");
 if(isset($_POST['btn-entrar'])):
 	$erros = array();
 	$login = mysqli_escape_string($connect, $_POST['email']);
@@ -58,7 +59,7 @@ endif;
 		</div>
 
 		<a class="btn btn-danger" href="index.php" role="button">Voltar</a>
-		<button type="submit" class="btn btn-success">Entrar</button>
+		<button type="submit" class="btn btn-success" value="btn-entrar">Entrar</button>
 		
 	</form>
 </div>

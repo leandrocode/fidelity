@@ -30,18 +30,20 @@
 ?>
 
 <div class="register">
-<img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
+<div class="foto"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
 <br>
 	<form method="POST">
 		
-		<div class="form-group">
+	<div class="form-row">
+		<div class="form-group col-md-6">
 			<label for="username">Nome</label>
 			<input type="text" class="form-control" id="username" name="username">
 		</div>
 
-		<div class="form-group">
+		<div class="form-group col-md-6">
 			<label for="email">E-mail</label>
 			<input type="email" class="form-control" id ="email" name="email">
+		</div>
 		</div>
 
 		<div class="form-row">

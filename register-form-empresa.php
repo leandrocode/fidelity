@@ -112,7 +112,7 @@
     </script>
 
 <div class="register">
-<img src="images/logo_fidelity.png" class="figure-img img-fluid rounded">
+<div class="foto"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
 <br>
 	<form method="POST">
 		<div class="form-row">
