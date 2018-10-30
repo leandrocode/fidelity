@@ -2,7 +2,7 @@
 
 <?php
 
-	$connect = mysqli_connect("localhost", "root", "", "fidelity");
+	require_once 'db_connect.php';
 	session_start();
 
 	if(isset($_POST["register"]))
