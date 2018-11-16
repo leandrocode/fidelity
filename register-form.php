@@ -28,7 +28,7 @@
 		
 	}
 ?>
-<div class="foto"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
+<div class="img-logo"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
 <div class="register-user">
 
 <br>

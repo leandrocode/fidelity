@@ -7,10 +7,10 @@ session_start();
 
 if(isset($_POST['btn-entrar'])):
 	$erros = array();
-	$login = mysqli_escape_string($connect, $_POST['email']);
-	$senha = mysqli_escape_string($connect, $_POST['password']);
+	$email = mysqli_escape_string($connect, $_POST['email']);
+	$password = mysqli_escape_string($connect, $_POST['password']);
 
-	if(empty($email) or empty($password)):
+	if(empty($email) || empty($password)):
 		$erros[] = "<li> O campo email/senha precisa ser preenchido </li>";
 	else:
 	
@@ -18,7 +18,7 @@ if(isset($_POST['btn-entrar'])):
 		$resultado = mysqli_query($connect, $sql);		
 
 		if(mysqli_num_rows($resultado) > 0):
-		$senha = md5($senha);       
+		$password = md5($password);       
 		$sql = "SELECT * FROM users WHERE login = '$email' AND senha = '$password'";
 
 		$resultado = mysqli_query($connect, $sql);
@@ -42,7 +42,7 @@ if(isset($_POST['btn-entrar'])):
 endif;
 ?>
 
-<div class="foto-entrar"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
+<div class="img-login"><img src="images/logo_fidelity.png" class="figure-img img-fluid rounded"></div>
 <div class="login">
 
 <br>

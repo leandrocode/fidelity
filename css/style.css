@@ -67,19 +67,19 @@ body {
     font: bold 14px/30px Arial, sans-serif;
 }
 
-.foto {
+.img-logo {
     width: 250px;
     height: auto;
     margin: 0 auto;
 }
 
-.foto-entrar {
+.img-login {
     width: 420px;
     height: auto;
     margin: 0 auto;
 }
 
-.cadastre {
+.register-text {
     font-family: 'Pacifico', cursive;
     color: rgb(82, 5, 82);
     font-size: 38px;
