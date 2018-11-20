@@ -5,7 +5,7 @@
 <br>
     <span class="register-text">Login realizado com sucesso!</span>
 <br>
-<a class="btn btn-danger" href="logout.php" role="button">Sair</a>
+<a class="btn btn-danger sair" href="logout.php" role="button">Sair</a>
     
 </div>
 

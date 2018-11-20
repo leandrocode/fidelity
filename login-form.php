@@ -5,7 +5,7 @@
 require_once 'db_connect.php';
 session_start();
 
-if(isset($_POST['btn-entrar'])):
+if(isset($_POST['email'])):
 	$erros = array();
 	$email = mysqli_escape_string($connect, $_POST['email']);
 	$password = mysqli_escape_string($connect, $_POST['password']);
