@@ -14,12 +14,12 @@ if(isset($_POST['btn-entrar'])):
 		$erros[] = "<li> O campo email/senha precisa ser preenchido </li>";
 	else:
 	
-		$sql = "SELECT login FROM users WHERE login = '$email'";
+		$sql = "SELECT email FROM users WHERE email = '$email'";
 		$resultado = mysqli_query($connect, $sql);		
 
 		if(mysqli_num_rows($resultado) > 0):
 		$password = md5($password);       
-		$sql = "SELECT * FROM users WHERE login = '$email' AND senha = '$password'";
+		$sql = "SELECT * FROM users WHERE email = '$email' AND senha = '$password'";
 
 		$resultado = mysqli_query($connect, $sql);
 
@@ -46,7 +46,7 @@ endif;
 <div class="login">
 
 <br>
-	<form>
+	<form method="POST">
 	
 		<div class="form-group">
 			<label for="email">E-mail</label>
