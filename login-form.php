@@ -50,7 +50,7 @@ endif;
 	
 		<div class="form-group">
 			<label for="email">E-mail</label>
-			<input type="email" class="form-control" id ="email" name="email" placeholder="Digite seu E-mail">
+			<input type="email" class="form-control" id="email" name="email" placeholder="Digite seu E-mail">
 		</div>
 
 		<div class="form-group">
