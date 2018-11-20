@@ -19,7 +19,7 @@ if(isset($_POST['btn-entrar'])):
 
 		if(mysqli_num_rows($resultado) > 0):
 		$password = md5($password);       
-		$sql = "SELECT * FROM users WHERE email = '$email' AND senha = '$password'";
+		$sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
 
 		$resultado = mysqli_query($connect, $sql);
 
